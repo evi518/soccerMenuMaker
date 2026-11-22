@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝練メニュー作成</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>朝練メニュー作成⚽️</h1>
+        <div class="controls">
+            <label>
+                練習時間
+                <select name="time-select" id="time-select">
+                    <option value="15">15分</option>
+                    <option value="30" selected>30分</option>
+                    <option value="45">45分</option>
+                    <option value="60">60分</option>
+                    <option value="90">90分</option>
+                </select>
+            </label>
+            <label>
+                強化したいメニュー
+                <select name="theme-select" id="theme-select">
+                    <option value="all">すべて</option>
+                    <option value="touch">ボールタッチ</option>
+                    <option value="dribble">ドリブル</option>
+                    <option value="trap">トラップ</option>
+                    <option value="shoot">シュート</option>
+                </select>
+            </label>
+            <button id="generate-btn">メニュー作成</button>
+        </div>
+        <section id="menu-result" class="menu-list"></section>
+    </main>
+</body>
+</html>
